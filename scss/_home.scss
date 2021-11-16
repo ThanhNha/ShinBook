@@ -1,0 +1,72 @@
+.home{
+    background: url(../Image/banner-bg.jpg ) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    &-container{
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    &-content{
+        flex: 1 1 42rem;
+        .heading-content{
+            font-size: 5rem;
+            color: $black;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.3rem;
+            color: $black-light;
+            line-height: 3rem;
+        }
+    }
+    &-slider{
+        flex: 1 1 42rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    &-wraper{
+        img{
+            height: 25rem;;
+        }
+        a:hover img{
+            transform: scale(.9);
+        }
+    }
+    &-stand{
+        width: 100%;
+        margin-top: -2rem;
+    }
+}
+
+
+.icons{
+    width: 100%;
+    &-container{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        gap: 1.5rem;
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+        i{
+            color: $green-light;
+            font-size: 3.5rem;
+        }
+        .content{
+            h3{
+                color: $black-light;
+                font-size: 2.5rem;
+                text-transform: capitalize;
+            }
+            p{
+                color: $black;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

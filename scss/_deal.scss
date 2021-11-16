@@ -1,0 +1,75 @@
+.deal{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: #f3f3f3;
+
+    &-content{
+        flex: 1 1 30rem;
+        h3{
+            font-size: 3rem;
+            color: $green-light;
+            text-transform: capitalize;
+        }
+        h1{
+            font-size: 5rem;
+            font-weight: 500;
+        }
+        p{
+            padding: 1rem 0;
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+    }
+    &-slider{
+        flex: 1 1 30rem;
+    }
+}
+
+.reviews{
+    width: 100%;
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    &-box:hover{
+        border: $boder-hover    ;
+    }
+    &-box{
+        padding: 2rem 1.5rem;
+        margin: 2rem 0;
+        text-align: center;
+        flex: 1 1 30rem;
+        border: $boder;
+        border-radius: .5rem;
+        h3{
+            padding: 1rem 0;
+            font-size: 2rem;
+            color: $black;
+        }
+        p{
+            font-size: 1.5rem;
+            line-height: 3rem;
+            color: $black-light;
+        }
+    }
+    &-img img{
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+    }
+    &-stars{
+        color: $green-light;
+        font-size: 2rem;
+        padding: 1rem ;
+    }
+    
+        
+    
+}

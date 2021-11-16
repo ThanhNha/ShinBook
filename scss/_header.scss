@@ -1,0 +1,193 @@
+
+
+.header-top{
+    background: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 9%;
+    .logo{
+        font-size: 2.5rem;
+        color: $black-light;
+        font-weight: bold;
+    }
+    i{
+        color: $green-light;
+    }
+
+    .search-form{
+       width: 50rem;
+       height: 5rem;
+       border: $boder;
+       overflow: hidden;
+       display:flex;
+       justify-content: space-between;
+       align-items: center;
+       border-radius: .5rem;
+       background: #fff;
+       
+       input{
+           border: none;
+           font-size: 1.5rem;
+           padding: 0 1.2rem;
+       }
+       label{
+           color: $black-light;
+           font-size: 2.5rem;
+           padding: 0 1.2rem;
+           cursor: pointer;
+           
+       }
+
+    }
+    a:hover,label:hover{
+        color: $green-light;
+    }
+
+    &-icons{
+        div,a{
+            font-size: 2.5rem;
+            color: $black-light;
+            margin-left: 1.5rem;
+        }
+        div:hover{
+            color: $green-light;
+        }
+        #search-btn{
+            display: none;
+        }
+        
+    }
+}
+.header-bottom.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: $box-shadow;
+}
+.header-bottom{
+    width: 100%;
+    text-align: center;
+    background-color: $green-light;
+    z-index: 100;
+    a{
+        margin-left: .1rem;
+        display: inline-block;
+        padding: 1.2rem;
+        color: #fff;
+        font-size: 1.7rem;
+    }
+    a:hover{
+        background: $green-dark;
+        border-left: .1rem solid #fff;
+        border-right: .1rem solid #fff;
+    }
+}
+.header-bottom .navbar .menu-link.active{
+    background: $green-dark;
+}
+
+
+.bottom-navbar{
+    z-index: 100;
+    display: none;
+    background: $green-light;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    a{
+
+        display: inline-block;
+        font-size: 1.7rem;
+        color: #fff;
+        padding: 1rem;
+        margin-left: 1.5rem;
+    }
+}
+
+.login{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    top: 0 ;
+    left: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background: rgba(255, 255, 255, .9);
+    .form{
+        width: 40rem;
+        padding: 2rem;
+        box-shadow: $box-shadow;
+        background: #fff;
+        .btn{
+            width: 100%;
+            padding: 1.5rem 4rem;
+            background: $green-light;
+            border: $boder;
+            color: #fff;
+            text-align: center;
+            border-radius: .5rem;
+            font-size: 1.7rem;
+            text-transform: capitalize;
+            margin: 1.5rem 0;
+        }
+        .checkbox{
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            label{
+                font-size: 1.5rem;
+                text-transform: capitalize;
+                color: $black-light;
+                font-weight: 300;
+            }
+        }
+
+        p{
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            color: $black-light;
+            font-weight: 300;
+        }
+        a{
+            color: $green-light;
+            font-weight: 300;
+        }
+    }
+    #close-login{
+        top:4%;
+        position: absolute;
+        right: 4rem;
+        font-size: 5rem;
+        color: $black-light;
+    }
+    h3{
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $black-dark;
+        text-align: center;
+        font-weight: bold;
+    }
+    span{
+        display: block;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        padding-top: 1rem;
+
+    }
+    .box{
+        width: 100%;
+        border: $boder;
+        font-size: 1.7rem;
+        border-radius: .5rem;
+        margin: .7rem 0;
+        padding: 1rem 1.2rem ;
+    }
+}
+.login.active{
+    left: 0;
+}

@@ -1,0 +1,95 @@
+@import"variables";
+*{
+    transition:all .2s linear;
+
+}
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    
+    padding: 5rem 9%;
+   
+}
+*::selection{
+    
+    background-color:$green-light;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px $green-light;
+	border-radius: .1rem;
+	background-color: #fff;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+    background: $green-dark;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: $green-light;
+
+}
+
+.main-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: $green-dark;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    transition: .2s linear;
+    overflow: hidden;
+    z-index: 0;
+}
+.main-btn::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 0;
+    bottom: 0 ;
+    right:0;
+    background:$green-light;
+    z-index: -1;
+    transition: .3s linear;
+    
+}
+.main-btn:hover::before{
+    height: 100%;
+    top: 0;
+    
+}
+
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    text-transform: capitalize;
+    span{
+        color: $black;
+        font-size: 3rem;
+        background: #fff;
+        padding: 1.5rem 5rem;
+        border: $boder;
+    }
+
+}
+.heading::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .01rem;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.1);
+    z-index: -1;
+}
+
+
